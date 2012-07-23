@@ -1,0 +1,30 @@
+= MetroZD - Metro ZipCode Database
+
+This gem contains a rakefile that will generate a metro zipcode database.
+
+Why is this useful? Metro areas are useful for locating population areas. So useful infact the USPS charges for access to this database. I found myself in need of it for two projects. I'm currently getting my data off wikipedia by hand. I hope someone more skilled with web scrappers can write one that can keep the database more upto date.
+
+== Install
+  gem install metrozd git => 'http://gems.github.com'
+
+== Usage
+
+To generate the model and populate your rails apps.
+
+bundle exec rake db:metro:create
+bundle exec rake db:metro:populate
+
+To remove the table
+bundle exec rake db:metro:drop
+
+== Contributing
+
+You can add a metro area by city by adding a handleCityEntry(..) to the populateData function. An example
+handleCityEntry("New York-Northern New Jersey-Long Island","New York City","NY", 10000..10499, 11004..05, 11100..11499, 11600..11699)
+
+This function can handle an unlimited number of zipcodes (ranges or integer). Since according to the USPS zipcodes change all the time (at least in growing areas) using a function makes it easier to change.
+
+== Limitations
+
+- The database can be optimized. Instead of duplicating the metro, city, state with each zipcode you can just use an id and a relation. However i'm not sure how to generate a relationship automatically without going deeper into generators.
+- Wikipedia. We get our data from wikipedia... nuff said. But honestly it's probably good enough and I think alot of people will enjoy a gem version of a needed database.
