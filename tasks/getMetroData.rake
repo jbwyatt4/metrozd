@@ -32,6 +32,7 @@ namespace :db do
       populateData
     end
 
+    #fetches data from wikipedia
     task fetchData: :environment do
       
     end

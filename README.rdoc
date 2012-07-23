@@ -39,5 +39,5 @@ This function can handle an unlimited number of zipcodes (ranges or integer). Si
 
 == License
 
-(C) 2012 John B. Wyatt IV
+Copyright © 2012 John B. Wyatt IV
 LGPL v3+ by the Free Software Foundation. To make it easy for everyone by contributing to this repository you agree to license said contributions under these terms.
