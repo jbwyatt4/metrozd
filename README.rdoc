@@ -22,9 +22,7 @@ To remove the table.
 
 You can add a metro area by city by adding a handleCityEntry(..) to the populateData function. An example
 
-```ruby
-handleCityEntry("New York-Northern New Jersey-Long Island","New York City","NY", 10000..10499, 11004..05, 11100..11499, 11600..11699)
-```
+  handleCityEntry("New York-Northern New Jersey-Long Island","New York City","NY", 10000..10499, 11004..05, 11100..11499, 11600..11699)
 
 This function can handle an unlimited number of zipcodes (ranges or integer). Since according to the USPS zipcodes change all the time (at least in growing areas) using a function makes it easier to change.
 
