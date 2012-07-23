@@ -26,7 +26,18 @@ You can add a metro area by city by adding a handleCityEntry(..) to the populate
 
 This function can handle an unlimited number of zipcodes (ranges or integer). Since according to the USPS zipcodes change all the time (at least in growing areas) using a function makes it easier to change.
 
+== Goals
+- Have the zipcodes for the top 50 US metro areas as defined by this wikipedia article.
+  http://en.wikipedia.org/wiki/Table_of_United_States_Metropolitan_Statistical_Areas
+- Improve the database schema to be more efficient.
+- A webscrapper to autogenerate the function calls.
+
 == Limitations
 
 - The database can be optimized. Instead of duplicating the metro, city, state with each zipcode you can just use an id and a relation. However i'm not sure how to generate a relationship automatically without going deeper into generators.
 - Wikipedia. We get our data from wikipedia... nuff said. But honestly it's probably good enough and I think alot of people will enjoy a gem version of a needed database.
+
+== License
+
+(C) 2012 John B. Wyatt IV
+LGPL v3+ by the Free Software Foundation. To make it easy for everyone by contributing to this repository you agree to license said contributions under these terms.

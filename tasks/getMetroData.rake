@@ -32,6 +32,10 @@ namespace :db do
       populateData
     end
 
+    task fetchData: :environment do
+      
+    end
+
     # All states should be saved as uppercase
     private
     def handleCityEntry(currMetroName, currCityName, currStateName, *values)
@@ -78,6 +82,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU Lessor General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>."
     end
+
 
   end
 end
