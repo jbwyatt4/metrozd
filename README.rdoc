@@ -5,7 +5,7 @@ This gem contains a rakefile that will generate a metro zipcode database.
 Why is this useful? Metro areas are useful for locating population areas. So useful infact the USPS charges for access to this database. I found myself in need of it for two projects. I'm currently getting my data off wikipedia by hand. I hope someone more skilled with web scrappers can write one that can keep the database more upto date.
 
 == Install
-  gem install metrozd git => 'http://gems.github.com/jbwyatt4/metrozd'
+  gem install metrozd git => 'git://gems.github.com/jbwyatt4/metrozd'
 
 == Usage
 
