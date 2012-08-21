@@ -1,0 +1,15 @@
+0.1
+
+=Started Project
+
+=Record
+Learned to make a rails plugin from railscast
+http://railscasts.com/episodes/135-making-a-gem?view=asciicast
+
+Rails 3.2 complained I had Rails 2.3 style plugins and directed me to this link.
+http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released
+
+Not much help.
+
+This gave a little insight but what I want is to add my gemfile to the bundle and then run a rake task-not manually have to copy a bunch of files around.
+http://code.coneybeare.net/how-to-convert-simple-rails-23-style-plugins
